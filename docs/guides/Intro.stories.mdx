@@ -1,0 +1,64 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Guides/Intro" />
+
+<div style={{ margin: '0 auto', maxWidth: '600px', textAlign: 'center' }}>
+
+<h1 align="center">Blade</h1>
+<p align="center">
+  <a href="https://github.com/styled-components/styled-components">
+    <img
+      src="https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e"
+      alt="Blade is styled with styled-components"
+    />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/facebook/jest">
+    <img src="https://jestjs.io/img/jest-badge.svg" alt="Blade is tested with jest" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/razorpay/blade/blob/master/LICENSE.md">
+    <img
+      src="https://img.shields.io/badge/license-MIT-blue.svg"
+      alt="Blade is released under the MIT license."
+    />
+  </a>
+</p>
+
+<h4>
+  <b>The Design System that powers Razorpay</b>
+</h4>
+
+</div>
+
+# 📦 Packages
+
+Blade has 2 packages
+
+## [`@razorpay/blade`](https://github.com/razorpay/blade/tree/master/packages/blade)
+
+This package is under **active development**. We'll only refer to this version of blade throughout this documentation.
+
+## [`@razorpay/blade-old`](https://github.com/razorpay/blade/tree/master/packages/blade-old)
+
+This package is under **maintenance** and it won't have any major releases. It will be **deprecated** once the newer version (`@razorpay/blade`) is ready for a stable release. Documentation for this package can be found [here](https://github.com/razorpay/blade/blob/master/packages/blade-old/README.md)
+
+# 📝 Versioning & Publishing
+
+- The first step in publishing a new version of blade is to first the mention the type of change and bump the version. We are using [`changesets`](https://github.com/atlassian/changesets) to handle automated versioning for us based on the intent of the change we mention in the PR.
+- Once a PR is approved by the authors of blade, based on if the PR needs a new version to be published the author will add a changeset to the PR.
+- After the `changeset` is added and the PR is merged the `release` workflow gets triggered by GitHub actions.
+- The `release` workflow runs `build` script which runs rollup to bundle `blade` and generates relevant `types` as well.
+- After the build script finishes, we'll have 3 bundles which will be published under `@razorpay/blade` scope
+
+```
+@razorpay/blade/components
+@razorpay/blade/tokens
+@razorpay/blade/utils
+```
+
+> 🗒 You can read in depth about our shipping strategy [here](https://github.com/razorpay/blade/blob/master/rfcs/2021-06-15-shipping-blade.md)
+
+# ⌛️ Current State
+
+For the current state of things please refer to the left hand sidebar. We're actively working on adding more components, utilities and docs. Please reach us on Slack at `#design-system` for any queries or create an issue on the GitHub repo.

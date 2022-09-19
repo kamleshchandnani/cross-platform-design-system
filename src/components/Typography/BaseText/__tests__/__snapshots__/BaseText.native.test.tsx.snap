@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseText /> should render regular text 1`] = `
+<Text
+  color="surface.text.normal.highContrast"
+  fontFamily="text"
+  fontSize={25}
+  fontWeight="regular"
+  lineHeight="m"
+  style={
+    Array [
+      Object {
+        "color": "hsla(0, 0%, 100%, 1)",
+        "fontFamily": "Lato",
+        "fontSize": 11,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "lineHeight": 18,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "textAlign": "left",
+        "textDecorationLine": "none",
+      },
+    ]
+  }
+>
+  Displaying some text
+</Text>
+`;
+
+exports[`<BaseText /> should render text in italics style with line-through 1`] = `
+<Text
+  color="surface.text.normal.highContrast"
+  fontFamily="text"
+  fontSize={25}
+  fontStyle="italic"
+  fontWeight="regular"
+  lineHeight="m"
+  style={
+    Array [
+      Object {
+        "color": "hsla(0, 0%, 100%, 1)",
+        "fontFamily": "Lato",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "fontWeight": "400",
+        "lineHeight": 18,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "textAlign": "left",
+        "textDecorationLine": "line-through",
+      },
+    ]
+  }
+  textDecorationLine="line-through"
+>
+  Displaying some text
+</Text>
+`;
+
+exports[`<BaseText /> should render text with default properties 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "hsla(217, 56%, 17%, 1)",
+        "fontFamily": "Lato",
+        "fontSize": 17,
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "lineHeight": 24,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "textAlign": "left",
+        "textDecorationLine": "none",
+      },
+    ]
+  }
+>
+  Displaying some text
+</Text>
+`;
