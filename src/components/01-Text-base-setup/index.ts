@@ -1,1 +1,1 @@
-export * from './Text.web';
+export * from './Text';

@@ -49,7 +49,7 @@ const Page = (): ReactElement => {
 const HeadingStoryMeta: Meta<
   HeadingProps<{ variant: 'small' | 'medium' | 'large' | 'subheading' }>
 > = {
-  title: 'Components/Typography/Heading',
+  title: 'Components/Typography/Heading  (Internal)',
   component: HeadingComponent,
   args: {
     variant: 'large',

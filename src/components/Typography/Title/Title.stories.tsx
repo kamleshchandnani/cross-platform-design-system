@@ -56,7 +56,7 @@ const Page = (): ReactElement => {
 };
 
 const TitleStoryMeta: Meta<TitleProps> = {
-  title: 'Components/Typography/Title',
+  title: 'Components/Typography/Title  (Internal)',
   component: TitleComponent,
   args: {
     variant: 'large',

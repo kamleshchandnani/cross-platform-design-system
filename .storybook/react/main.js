@@ -5,8 +5,6 @@ module.exports = {
     '@storybook/design-system': { disable: true },
   },
   stories: [
-    '../../docs/**/*.stories.mdx',
-    '../../docs/**/*.stories.@(ts|tsx|js|jsx)',
     '../../src/**/*.stories.mdx',
     '../../src/**/*.stories.@(ts|tsx|js|jsx)',
     '../../src/**/*.stories.internal.mdx',

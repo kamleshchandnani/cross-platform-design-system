@@ -51,7 +51,7 @@ const Page = (): ReactElement => {
 };
 
 const TextStoryMeta: Meta<TextProps<{ variant: 'body' | 'caption' }>> = {
-  title: 'Components/Typography/Text',
+  title: 'Components/Text',
   component: TextComponent,
   args: {
     variant: 'body',
@@ -70,12 +70,7 @@ const TextStoryMeta: Meta<TextProps<{ variant: 'body' | 'caption' }>> = {
   },
 };
 
-const TextTemplate: ComponentStory<typeof TextComponent> = (args) => {
-  return <TextComponent {...args}>{args.children}</TextComponent>;
-};
-
 export default TextStoryMeta;
-export const Text = TextTemplate.bind({});
 
 export const Typography: ComponentStory<typeof TextComponent> = (args) => {
   return (

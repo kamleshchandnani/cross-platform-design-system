@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { RenderText } from './RenderText';
 import renderWithTheme from '~src/_helpers/testing/renderWithTheme.native';
