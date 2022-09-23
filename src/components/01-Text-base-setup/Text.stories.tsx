@@ -1,11 +1,11 @@
 import type { ComponentStory, Meta } from '@storybook/react';
 import { Title, Subtitle, Primary, ArgsTable, Stories, PRIMARY_STORY } from '@storybook/addon-docs';
 import { Highlight } from '@storybook/design-system';
-import type { TextProps } from './Text';
+import type { TextProps } from './TextTypes';
 import { Text as TextComponent } from './Text';
 
 export default {
-  title: 'Components/Typography/Text (Internal)',
+  title: 'Components/Typography/01-Text',
   component: TextComponent,
   args: {
     color: 'surface.text.normal.lowContrast',
@@ -17,8 +17,7 @@ export default {
     textDecorationLine: 'none',
     lineHeight: 'l',
     name: 'Storybook',
-    children:
-      'Current Accounts supercharged by RazorpayX come with integrated tools and integrations that make financial management and accounting simple',
+    children: 'Peter Piper picked a peck of pickled peppers',
   },
   parameters: {
     docs: {
@@ -50,4 +49,4 @@ const TextTemplate: ComponentStory<typeof TextComponent> = (args) => {
 
 export const Text = TextTemplate.bind({});
 // Need to do this because of storybook's weird naming convention, More details here: https://storybook.js.org/docs/react/writing-stories/naming-components-and-hierarchy#single-story-hoisting
-Text.storyName = 'Text';
+Text.storyName = '01-Text';

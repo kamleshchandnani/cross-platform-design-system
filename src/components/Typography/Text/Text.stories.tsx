@@ -51,7 +51,7 @@ const Page = (): ReactElement => {
 };
 
 const TextStoryMeta: Meta<TextProps<{ variant: 'body' | 'caption' }>> = {
-  title: 'Components/Text',
+  title: 'Components/Typography/Text',
   component: TextComponent,
   args: {
     variant: 'body',
@@ -72,14 +72,14 @@ const TextStoryMeta: Meta<TextProps<{ variant: 'body' | 'caption' }>> = {
 
 export default TextStoryMeta;
 
-export const Typography: ComponentStory<typeof TextComponent> = (args) => {
+export const Text: ComponentStory<typeof TextComponent> = (args) => {
   return (
     <>
-      <TypographyTitle>Title - Power your finance, grow your business</TypographyTitle>
-      <Heading>Heading - Get Started With Payment Gateway</Heading>
+      <TypographyTitle>Title - Thin sticks, thick bricks</TypographyTitle>
+      <Heading>Heading - She sells seashells by the seashore</Heading>
       <TextComponent {...args}>
-        Body Text - Accept payments from customers. Automate payouts to vendors & employees. Never
-        run out of working capital.
+        Body Text - Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t fuzzy, was
+        he?.
       </TextComponent>
     </>
   );

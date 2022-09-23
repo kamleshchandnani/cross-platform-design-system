@@ -30,7 +30,7 @@
     }
   },
   "scripts": {
-    "typecheck": "tsc",
+    "tsc": "tsc",
     "prepublish": "yarn build",
     "build": "run-s build:*",
     "clearCache": "jest --clearCache",
