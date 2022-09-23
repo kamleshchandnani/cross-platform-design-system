@@ -23,13 +23,13 @@ argsEnhancers.forEach((enhancer) => addArgsEnhancer(enhancer));
 
 const getStories = () => {
   return [
+    require('../../src/components/Typography/Text/Text.stories.tsx'),
     require('../../src/components/01-Text-base-setup/Text.stories.tsx'),
     require('../../src/components/02-Text-setup-exports/Text.stories.tsx'),
     require('../../src/components/03-Text-setup-jest/Text.stories.tsx'),
     require('../../src/components/Text/Text.stories.tsx'),
     require('../../src/components/Typography/BaseText/BaseText.stories.tsx'),
     require('../../src/components/Typography/Heading/Heading.stories.tsx'),
-    require('../../src/components/Typography/Text/Text.stories.tsx'),
     require('../../src/components/Typography/Title/Title.stories.tsx'),
   ];
 };
