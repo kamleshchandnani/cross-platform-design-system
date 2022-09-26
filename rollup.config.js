@@ -108,8 +108,7 @@ const getDeclarationsConfig = ({ exportCategory }) => ({
   input: `${outputRootDirectory}/types/${exportCategory}/index.d.ts`,
   output: [
     {
-      // file: `${outputRootDirectory}/${exportCategory}/index.d.ts`,
-      file: `${outputRootDirectory}/index.d.ts`,
+      file: `${outputRootDirectory}/${exportCategory}/index.d.ts`,
       format: 'esm',
     },
   ],
